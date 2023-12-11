@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+
+body{
+   background-color: rgb(215, 226, 178); 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Dhurjati', sans-serif;
+    color: white;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color:black;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.logo_img{
+    width: 2rem;
+    height: 2rem;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgb(180, 223, 180);
+}
+.songList h1{
+    color: rgb(218, 2, 2);
+    text-shadow: 2px 2px 2px black;
+    font-weight: bolder;
+}
+.container{
+    min-height: 53.5vh;
+    /* background-color: black; */
+    /* color: rgb(195, 17, 17); */
+    font-family: 'Afacad',sans-serif;
+    display: flex;
+    font-weight:bolder;
+    
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 10px;
+    padding: 34px;
+    background-image: url('music_back.webp');
+    background-position-x: center;
+    
+}
+.bottom{
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icons {
+    margin-top:14px;
+    font-size: 13px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItemConatiner{
+margin-top: 75px;
+}
+.songItem{
+height: 30px;
+display: flex;
+background-color: black;
+/* width: 25rem; */
+color: white;
+margin: 12px 0;
+justify-content: space-between;
+align-items: center;
+border-radius: 20px;
+padding-right: 15px;
+}
+.songItem img{
+width: 33px;
+margin:0 23px;
+border-radius:30px;
+}
+.timeStamp{
+    margin: 0 23px;
+    
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Afacad',sans-serif;
+    display: flex;
+    
+}
+.songInfo img{
+    margin:7px 5px;
+    height: 10px;
+   opacity:0;
+   transition:opacity  0.4s ease-in-out;
+}
